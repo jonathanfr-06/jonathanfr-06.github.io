@@ -1,0 +1,68 @@
+* {
+  background-color: rgb(36, 36, 36);
+  color: rgb(5, 235, 109);
+  font-family: "Source Code Pro";
+}
+img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+h1 {
+  font-size: 48px;
+  line-height: 1em;
+}
+h2 {
+  font-size: 40px;
+  line-height: 1em;
+}
+.main_container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  gap: 4em;
+}
+#pres {
+  font-weight: 300;
+}
+
+#contact {
+  display: flex;
+  justify-content: space-evenly;
+  column-gap: 1em;
+  flex-wrap: wrap;
+}
+
+#techno {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  font-size: 0.9em;
+}
+
+.language_framework {
+  border: 1px solid rgb(5, 235, 109);
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  #about {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    flex-direction: column;
+  }
+
+  img {
+    width: 200px;
+    height: 200px;
+  }
+}
