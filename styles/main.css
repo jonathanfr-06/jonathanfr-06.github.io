@@ -84,12 +84,44 @@ h3 {
   align-items: center;
 }
 
+input{
+  border:1px solid rgb(5, 235, 109);
+  width:400px;
+
+}
+textarea{
+  border:1px solid rgb(5, 235, 109);
+  width:400px;
+
+}
+
+button{
+  width:400px;
+  height:40px;
+  background-color: rgb(5, 235, 109);
+  border:1px solid green;
+  color:black;
+}
+#form{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
 @media (max-width: 600px) {
   #about {
     display: flex;
     align-items: center;
     gap: 1em;
     flex-direction: column;
+  }
+
+  .container_bubbles{
+    visibility: hidden;
+  }
+
+  .container_bubbles2{
+    visibility: hidden;
   }
 
   img {
