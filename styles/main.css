@@ -86,17 +86,17 @@ h3 {
 
 input{
   border:1px solid rgb(5, 235, 109);
-  width:400px;
+  width:35vh;
 
 }
 textarea{
   border:1px solid rgb(5, 235, 109);
-  width:400px;
+  width:35vh;
 
 }
 
 button{
-  width:400px;
+  width:35vh;
   height:40px;
   background-color: rgb(36, 36, 36);
   border:1px solid rgb(5, 235, 109);
@@ -202,3 +202,4 @@ button{
     transform: translateY(-10vh) scale(1);
   }
 }
+
