@@ -86,17 +86,17 @@ h3 {
 
 input{
   border:1px solid rgb(5, 235, 109);
-  width:200px;
+  width:400px;
 
 }
 textarea{
   border:1px solid rgb(5, 235, 109);
-  width:200px;
+  width:400px;
 
 }
 
 button{
-  width:200px;
+  width:400px;
   height:40px;
   background-color: rgb(36, 36, 36);
   border:1px solid rgb(5, 235, 109);
