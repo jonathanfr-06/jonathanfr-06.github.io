@@ -109,6 +109,13 @@ button{
   align-items: center;
 }
 @media (max-width: 600px) {
+
+  .main_page {
+    display: flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+  } 
+
   #about {
     display: flex;
     align-items: center;
