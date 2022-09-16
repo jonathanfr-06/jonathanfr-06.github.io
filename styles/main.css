@@ -17,6 +17,10 @@ h2 {
   font-size: 40px;
   line-height: 1em;
 }
+.main_page{
+  display:grid;
+  gap:10px;
+}
 .main_container {
   max-width: 700px;
   margin: 0 auto;
@@ -64,5 +68,58 @@ h2 {
   img {
     width: 200px;
     height: 200px;
+  }
+}
+
+.container_bubbles{
+  position:absolute;
+  width: auto;
+  height:100%;
+  overflow:hidden;
+  opacity:1;
+}
+.container_bubbles2{
+  position:absolute;
+  right:0;
+  width: auto;
+  height:100%;
+  overflow:hidden;
+  opacity:1;
+}
+
+
+.bubbles{
+  position:relative;
+  display:flex;
+}
+
+.bubbles span{
+  position:relative;
+  width:30px;
+  height:30px;
+  background-color: rgb(5, 235, 109);
+  margin: 0 4px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px rgb(0, 255, 115),
+  0 0 50px rgb(0, 255, 115),
+  0 0 100px rgb(0, 255, 115);
+  animation: animate 15s linear infinite;
+  animation-duration: calc(125s / var(--i));
+
+}
+
+.bubbles span:nth-child(even){
+  background:rgb(255, 255, 77);
+  box-shadow:0 0 0 10px rgb(172, 172, 0),
+  0 0 50px rgb(255, 255, 77),
+  0 0 100px rgb(255, 255, 77);
+}
+
+@keyframes animate{
+  0%{
+    transform:translateY(100vh) scale(0);
+  }
+  100%{
+    transform:translateY(-10vh) scale(1);
   }
 }
