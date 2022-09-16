@@ -21,6 +21,8 @@ const arrayPHP = [
   "array_keys",
 ];
 
+
+
 const arrayJS = [
   "console.log",
   "console.error",
@@ -40,147 +42,149 @@ const arrayJS = [
   "pop",
   "push",
 ];
-
+const myArr = Array(20).join().split(',').map(function(a){return this.i++},{i:1});console.log(myArr);
 Array.prototype.random = function () {
   return this[Math.floor(Math.random() * this.length)];
 };
 
+
+
 function randomStrToDom() {
   document.querySelector(".bubbles").innerHTML =
-    '<span style="--i:23;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayPHP.random() +
     "</span>" +
-    '<span style="--i:21;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayPHP.random() +
     "</span>" +
-    '<span style="--i:12;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayPHP.random() +
     "</span>" +
-    '<span style="--i:14;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayPHP.random() +
     "</span>" +
-    '<span style="--i:15;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayPHP.random() +
     "</span>" +
-    '<span style="--i:9;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayPHP.random() +
     "</span>" +
-    '<span style="--i:11;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayPHP.random() +
     "</span>" +
-    '<span style="--i:23;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayPHP.random() +
     "</span>" +
-    '<span style="--i:21;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayPHP.random() +
     "</span>" +
-    '<span style="--i:12;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayPHP.random() +
     "</span>" +
-    '<span style="--i:14;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayPHP.random() +
     "</span>" +
-    '<span style="--i:15;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayPHP.random() +
     "</span>" +
-    '<span style="--i:9;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayPHP.random() +
     "</span>" +
-    '<span style="--i:14;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayPHP.random() +
     "</span>"+ 
-    '<span style="--i:19;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayPHP.random() +
     "</span>"+ 
-    '<span style="--i:10;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayPHP.random() +
     "</span>"+ 
-    '<span style="--i:16;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayPHP.random() +
     "</span>"+ 
-    '<span style="--i:13;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayPHP.random() +
     "</span>"+ 
-    '<span style="--i:17;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayPHP.random() +
     "</span>"+ 
-    '<span style="--i:15;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayPHP.random() +
     "</span>"+ 
-    '<span style="--i:20;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayPHP.random() +
     "</span>"+ 
-    '<span style="--i:10;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayPHP.random() +
     "</span>"+ 
-    '<span style="--i:18;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayPHP.random() +
     "</span>";
   document.querySelector(".bubbles2").innerHTML =
-    '<span style="--i:23;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayJS.random() +
     "</span>" +
-    '<span style="--i:12;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayJS.random() +
     "</span>" +
-    '<span style="--i:16;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayJS.random() +
     "</span>" +
-    '<span style="--i:15;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayJS.random() +
     "</span>" +
-    '<span style="--i:19;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayJS.random() +
     "</span>" +
-    '<span style="--i:14;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayJS.random() +
     "</span>" +
-    '<span style="--i:13;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayJS.random() +
     "</span>" +
-    '<span style="--i:11;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayJS.random() +
     "</span>" +
-    '<span style="--i:9;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayJS.random() +
     "</span>" +
-    '<span style="--i:30;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayJS.random() +
     "</span>" +
-    '<span style="--i:10;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayJS.random() +
     "</span>" +
-    '<span style="--i:17;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayJS.random() +
     "</span>" +
-    '<span style="--i:20;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayJS.random() +
     "</span>" +
-    '<span style="--i:21;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayJS.random() +
     "</span>" +
-    '<span style="--i:13;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayJS.random() +
     "</span>" +
-    '<span style="--i:15;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayJS.random() +
     "</span>" +
-    '<span style="--i:18;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayJS.random() +
     "</span>" +
-    '<span style="--i:15;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayJS.random() +
     "</span>" +
-    '<span style="--i:12;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayJS.random() +
     "</span>" +
-    '<span style="--i:10;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayJS.random() +
     "</span>" +
-    '<span style="--i:14;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayJS.random() +
     "</span>" +
-    '<span style="--i:19;">' +
+    '<span style="--i:'+ myArr.random()+';">' +
     arrayJS.random() +
     "</span>";
 }
