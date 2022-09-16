@@ -9,32 +9,42 @@ html {
   height: 100%;
 }
 body {
-  min-height: 100%;
+  height: 100vh;
+  width: 100%;
 }
 img {
   width: 150px;
   height: 150px;
   object-fit: cover;
   border-radius: 50%;
-  border:2px solid rgb(5, 235, 109);
+  border: 2px solid rgb(5, 235, 109);
 }
 h1 {
   font-size: 48px;
   line-height: 1em;
-  text-shadow: 1px 1px 2px rgb(5, 235, 109), 0 0 1em rgb(5, 235, 109), 0 0 0.2em rgb(5, 235, 109);
-
+  text-shadow: 1px 1px 2px rgb(5, 235, 109), 0 0 1em rgb(5, 235, 109),
+    0 0 0.2em rgb(5, 235, 109);
 }
 h2 {
   font-size: 40px;
   line-height: 1em;
-    text-shadow: 1px 1px 2px rgb(5, 235, 109), 0 0 1em rgb(5, 235, 109), 0 0 0.2em rgb(5, 235, 109);
+  text-shadow: 1px 1px 2px rgb(5, 235, 109), 0 0 1em rgb(5, 235, 109),
+    0 0 0.2em rgb(5, 235, 109);
+}
 
+h3 {
+  font-size: 26px;
+  line-height: 1em;
+  text-shadow: 1px 1px 2px rgb(5, 235, 109), 0 0 1em rgb(5, 235, 109),
+    0 0 0.2em rgb(5, 235, 109);
 }
 .main_page {
   display: grid;
+  grid-template-columns: 30% 40% 30%;
   gap: 10px;
 }
 .main_container {
+  grid-column: 2/3;
   max-width: 700px;
   margin: 0 auto;
   padding: 1em;
@@ -88,19 +98,19 @@ h2 {
 }
 
 .container_bubbles {
-  position: absolute;
+  grid-column: 1/2;
+  position: fixed;
   width: auto;
-  height: 100%;
-  overflow: hidden;
+  height: 100vh;
   opacity: 1;
   z-index: 0;
 }
 .container_bubbles2 {
-  position: absolute;
+  grid-column: 3/4;
+  position: fixed;
   right: 0;
   width: auto;
   height: 100vh;
-  overflow: hidden;
   z-index: 0;
   opacity: 1;
 }
@@ -146,7 +156,7 @@ h2 {
 
 @keyframes animate {
   0% {
-    transform: translateY(100vh) scale(0);
+    transform: translateY(200vh) scale(0);
   }
   100% {
     transform: translateY(-10vh) scale(1);
