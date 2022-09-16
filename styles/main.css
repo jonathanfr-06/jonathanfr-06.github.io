@@ -4,24 +4,35 @@
   font-family: "Source Code Pro";
   z-index: 0;
 }
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
 img {
   width: 150px;
   height: 150px;
   object-fit: cover;
   border-radius: 50%;
+  border:2px solid rgb(5, 235, 109);
 }
 h1 {
   font-size: 48px;
   line-height: 1em;
+  text-shadow: 1px 1px 2px rgb(5, 235, 109), 0 0 1em rgb(5, 235, 109), 0 0 0.2em rgb(5, 235, 109);
+
 }
 h2 {
   font-size: 40px;
   line-height: 1em;
+    text-shadow: 1px 1px 2px rgb(5, 235, 109), 0 0 1em rgb(5, 235, 109), 0 0 0.2em rgb(5, 235, 109);
+
 }
 .main_page {
   display: grid;
   gap: 10px;
-  
 }
 .main_container {
   max-width: 700px;
@@ -82,13 +93,13 @@ h2 {
   height: 100%;
   overflow: hidden;
   opacity: 1;
-  z-index:0;
+  z-index: 0;
 }
 .container_bubbles2 {
   position: absolute;
   right: 0;
   width: auto;
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
   z-index: 0;
   opacity: 1;
@@ -108,6 +119,9 @@ h2 {
   border-radius: 50%;
   font-size: 26px;
   animation: animate 15s linear infinite;
+  text-shadow: 1px 1px 2px rgb(5, 235, 109), 0 0 1em rgb(5, 235, 109),
+    0 0 0.2em rgb(5, 235, 109);
+
   animation-duration: calc(125s / var(--i));
 }
 
@@ -125,6 +139,8 @@ h2 {
   border-radius: 50%;
   font-size: 26px;
   animation: animate 15s linear infinite;
+  text-shadow: 1px 1px 2px rgb(5, 235, 109), 0 0 1em rgb(5, 235, 109),
+    0 0 0.2em rgb(5, 235, 109);
   animation-duration: calc(125s / var(--i));
 }
 
